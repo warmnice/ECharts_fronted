@@ -1,0 +1,13 @@
+{
+    "extends": "stylelint-config-recommended",
+    "rules": {
+      "declaration-block-properties-order": [
+        "display",
+        "position",
+        "width",
+        "height",
+        "color"
+      ]
+    }
+  }
+  

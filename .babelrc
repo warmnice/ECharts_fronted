@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ],
+  "presets": [
+    [
+        "@babel/preset-env",
+        {
+          "modules": false //用于告诉 Babel 不处理模块的转换，因为现代的构建工具（如Webpack）通常会处理模块转换
+        }
+      ]
+  ]
+}

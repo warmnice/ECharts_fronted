@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "preserve", //保留JSX代码，但不进行处理
+    "allowJs": true, //允许混合使用js和ts
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true, //减少代码转换时产生的冗余
+    "sourceMap": true, //将内联的source map输出到编译后的JavaScript文件
+    "baseUrl": "./src",
+    "paths": {
+        "@/*" : ["*"]
+    },
+    "plugins": [
+        {
+          "name": "@vue/compiler-sfc"
+        }
+    ]
+  },
+  "include": [
+    "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"
+  ]
+
+}
